@@ -1,0 +1,187 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+ background-color: #FAF9F6;
+}
+
+body{
+  font-family: Helvetica, sans-serif;
+}
+
+#page-wrapper{
+  position: relative;
+}
+
+#header{
+  position: fixed;
+  top: 0;
+  min-height: 8rem;
+  padding: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  background-color: #FAF9F6;
+}
+
+@media (max-width: 650px){
+  
+  #header{
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+}
+
+.logo{
+  width:30vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  max-width: 400px; 
+  margin-right: 20px;
+}
+
+@media (max-width: 650px){
+.logo{
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative; 
+  }
+}
+
+nav{
+  font-weight: bold;
+  display: block;
+  align-items: right;
+  font-size: 18px;
+}
+
+@media (max-width: 650px){
+  nav{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+ul{
+  display: flex;
+  width: 30vw;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+@media (max-width: 650px){
+  ul{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+li{
+   list-style: none;
+   display: list-item;
+   margin: 10px;
+  }
+
+#header-img{
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+  max-width: 200px;
+}
+
+li>a{
+  text-decoration: none;
+  color: black
+}
+
+.info-video{
+  display: flex;
+  margin-top: 140px;
+  justify-content: center; 
+}
+
+@media (max-width: 650px){
+  .info-video{
+    margin-top: 300px;
+  }
+}
+
+#video{
+  width:80vw;
+  height: 50vh;
+  object-fit: contain;
+  margin: 10px;
+}
+
+img{
+  max-width: 10px;
+  object-fit:contain;
+  margin: 0 20px 0 0px;
+  justify-content:space around; 
+}
+
+h4{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color:black;
+  Margin-top: 20px;
+  margin-bottom:15px;
+}
+
+h3{
+  font-size:12px;
+  font-style:none;
+}
+
+h5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  font-size: 14px;
+}
+
+h5>a{
+  color:grey;
+}
+
+p{
+ font-size: 12px;
+ font-weight: normal;
+ color:black;
+ display: flex;
+ justify-content: center;
+ text-align: right;
+ width:50%
+}
+
+.item{
+  display: block;
+  width:100%;
+}
+
+h5>a:hover{
+  color:blue;
+}
+
+h5>a:visited{
+  color: purple;
+}
+
+@media(prefers-reduced-motion: no-preference){
+    *{
+    scroll-behavior: smooth;
+    }
+  }
